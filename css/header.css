@@ -1,0 +1,36 @@
+/*
+** The Header Media Queries **
+** Tweak as per your needs **
+*/
+.title {
+  font-weight: bold;
+  font-size: 27px; }
+
+.site-header__top {
+  background-color: #def7ff; }
+  .site-header__top ul {
+    display: flex; }
+  .site-header__top li:not(:last-child) {
+    margin-right: 1.5rem; }
+  .site-header__top .site-header__start {
+    display: none; }
+
+.site-header__bottom {
+  position: relative;
+  background-color: #111131; }
+  @media (max-width: 939px) {
+    .site-header__bottom .site-header__end {
+      order: -1; } }
+.site-header__wrapper {
+  display: flex;
+  justify-content: space-between; }
+
+.site-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem; }
+  @media (min-width: 940px) {
+    .site-header__wrapper {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem; } }
