@@ -4,7 +4,9 @@
 */
 .title {
   font-weight: bold;
-  font-size: 27px; }
+  font-size: 27px;
+  color: Black;
+  text-decoration: none;}
 
 .site-header__top {
   background-color: #def7ff; }
