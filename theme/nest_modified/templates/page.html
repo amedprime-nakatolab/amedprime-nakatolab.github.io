@@ -27,22 +27,34 @@
 {% endblock header %}
 
 {% block content %}
+<div class="tab-wrap">
+  <input id="TAB-01" type="radio" name="TAB" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-01">概要</label>
+  <div class="tab-content">
     <div class="container content">
         {{ page.content }}
     </div>
-
     <div class="archive-container">
         <div class="container content archive">
             <h2><a href="#">Recent Posts</a></h2>
             <dl class="dl-horizontal">
-                {% for article in articles %}
-                  {% if page.title in article.tags %}
-                    <dt>{{ article.locale_date}}</dt>
-                    <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
+                {% for article in articles | selectattr('category', '==', page.title)%}
+                  {% if loop.index <= 1 %}
+                      <dt>{{ article.locale_date}}</dt>
+                      <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
                   {% endif %}
                 {% endfor %}
             </dl>
         </div>
     </div>
+  </div>
+  <input id="TAB-02" type="radio" onclick="location.href='{{ SITEURL }}/pages/output.html'" name="TAB" class="tab-switch" /><label class="tab-label" for="TAB-02">過去の講演</label>
+  <div class="tab-content">
+
+  </div>
+  <!-- <input id="TAB-03" type="radio" name="TAB" class="tab-switch" /><label class="tab-label" for="TAB-03"><a href="{{ SITEURL }}/pages/output.html" id="tab-label">過去の講演</a></label> -->
+</div>
+
+
+
 
 {% endblock %}
