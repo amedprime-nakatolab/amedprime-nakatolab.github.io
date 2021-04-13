@@ -30,6 +30,9 @@ body {
     line-height: 24px;
     -webkit-font-smoothing:antialiased;
     text-rendering: optimizeLegibility;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Links */
@@ -262,7 +265,7 @@ h4:after {
     margin-top: 10px;
     margin-bottom: 15px;
     width: 50px;
-    border-bottom: 3px solid #eb2344;
+    border-bottom: 3px solid #E6F0D7;
 }
 .header-subtitle {
     font-size: 14px;
@@ -488,7 +491,7 @@ a#tab-label{
 }
 /* アクティブなタブ */
 .tab-switch:checked+.tab-label {
-  background: #356689;
+  background: #1c122f;
 }
 .tab-switch:checked+.tab-label+.tab-content {
   height: auto;
@@ -537,7 +540,7 @@ tr:nth-child(odd) {
 /* Gradients */
 .gradient {
     /* background-color: #356689; */
-    background-color: #183D6A;
+    background-color: #1B112E;
 }
 
 /* Footer */
@@ -548,6 +551,7 @@ tr:nth-child(odd) {
     font-weight: 300;
     text-align: left;
     color: #fff;
+    margin-top: auto;
 }
 
 .footer-title {

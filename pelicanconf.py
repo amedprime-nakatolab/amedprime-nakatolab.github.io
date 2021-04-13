@@ -6,7 +6,7 @@
 # サイトの基本情報 #
 AUTHOR = ''
 SITENAME = ''
-SITEURL = ''
+SITEURL = 'https://amedprime-nakatolab.github.io/'
 TIMEZONE = 'Asia/Tokyo'
 DEFAULT_LANG = 'ja'
 
@@ -26,7 +26,7 @@ USE_FOLDER_AS_CATEGORY = True
 #------------#
 # Theme path #
 THEME = './theme/nest_modified'
-# PLUGIN_PATHS = ['./pelican-plugins']
+PLUGIN_PATHS = ['./pelican-plugins']
 
 #------------#
 # ページボタン #

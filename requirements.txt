@@ -2,3 +2,4 @@ pelican
 Markdown
 ghp-import
 pytablewriter
+pelican-seo
