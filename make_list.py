@@ -3,6 +3,7 @@ import pandas as pd
 import re
 import os
 import pytablewriter
+import datetime
 
 category = ["date","Speaker","Title","Article"]
 date = []
@@ -32,7 +33,10 @@ df['Speaker'] = df['Speaker'].str.replace('（', '<br>（')
 writer = pytablewriter.MarkdownTableWriter()
 writer.from_dataframe(df)
 print(df)
-tags = "Title: セミナー一覧\nDate: 2020-12-15 22:00\nCategory: セミナー一覧\nTags: セミナー一覧\nTemplate: page_before\n\n"
+
+d_today = datetime.date.today()
+
+tags = "Title: セミナー一覧\nDate: "+ d_today.isoformat() + "\nCategory: セミナー一覧\nTags: セミナー一覧\nTemplate: page_before\n\n"
 
 with open("./content/pages/output.md", mode='w') as f:
     f.write(tags)
