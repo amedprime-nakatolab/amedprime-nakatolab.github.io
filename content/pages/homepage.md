@@ -13,7 +13,6 @@ save_as: index.html
 参考：
 
 - [AMED「健康・医療の向上に向けた早期ライフステージにおける生命現象の解明」](https://www.amed.go.jp/program/list/16/02/001_13.html)
--  [頑健なデータ駆動形エピゲノム解析を実現する情報解析システムの構築](https://amedprime-nakatolab.github.io/)
 
 ![AMED-PRIME_Fig1.jpeg](../images/AMED-PRIME_Fig1.jpeg)
 
