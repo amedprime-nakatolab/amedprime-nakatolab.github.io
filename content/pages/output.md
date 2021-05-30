@@ -1,5 +1,5 @@
 Title: セミナー一覧
-Date: 2021-05-06
+Date: 2021-05-30
 Category: セミナー一覧
 Tags: セミナー一覧
 Template: page_before
