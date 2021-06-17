@@ -20,7 +20,7 @@ for file in sorted(files, reverse=True):
         md = f.read()
         date.append(re.findall('<dd class="date">(.*)</dd>', md)[0])
         Speaker.append(re.findall('<dd class="Speaker">(.*)</dd>', md)[0])
-        Title.append(re.findall('<dd class="Title">(.*)</dd>', md)[0])
+        Title.append(re.findall('<h1 class="Title">(.*)</h1>', md)[0])
         Article.append('<a href="https://amedprime-nakatolab.github.io/Seminar/'+filename+'.html">詳細')
 df = pd.DataFrame({"Date" : date,
                 "Speaker": Speaker,
