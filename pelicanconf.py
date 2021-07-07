@@ -51,12 +51,12 @@ AUTHOR_FEED_RSS = None
 
 # Add header background image from content/images : 'background.jpg'
 NEST_HEADER_IMAGES = ''
-NEST_HEADER_LOGO = '/images/logo.png'
+NEST_HEADER_LOGO = ''
 
 
 # Footer
-# NEST_SITEMAP_COLUMN_TITLE = u'Sitemap'
-# NEST_SITEMAP_MENU = [('Archives', '/archives.html'),('Tags','/tags.html'), ('Authors','/authors.html')]
+NEST_SITEMAP_COLUMN_TITLE = u'Sitmap'
+NEST_SITEMAP_MENU = [('マルチNGS研究会', '/pages/Seminar.html'),('過去の講演','/pages/output.html'), ('セミナー案内の配信','/pages/ML.html')]
 NEST_SITEMAP_ATOM_LINK = u'Atom Feed'
 NEST_SITEMAP_RSS_LINK = u'RSS Feed'
 NEST_SOCIAL_COLUMN_TITLE = u'Social'
