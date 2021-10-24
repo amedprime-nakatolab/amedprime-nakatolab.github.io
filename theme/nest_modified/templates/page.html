@@ -38,7 +38,7 @@
             <h2><a href="#">Recent Posts</a></h2>
             <dl class="dl-horizontal">
                 {% for article in articles | selectattr('category', '==', page.title)%}
-                  {% if loop.index <= 1 %}
+                  {% if loop.index <= 2 %}
                       <dt>{{ article.locale_date}}</dt>
                       <dd><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></dd>
                   {% endif %}
