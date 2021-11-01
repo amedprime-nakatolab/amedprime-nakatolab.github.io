@@ -1,3 +1,4 @@
+pandas
 pelican
 Markdown
 ghp-import

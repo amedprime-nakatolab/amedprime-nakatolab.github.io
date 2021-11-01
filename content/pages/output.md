@@ -1,5 +1,5 @@
 Title: セミナー一覧
-Date: 2021-10-22
+Date: 2021-11-01
 Category: セミナー一覧
 Tags: セミナー一覧
 Template: page_before
