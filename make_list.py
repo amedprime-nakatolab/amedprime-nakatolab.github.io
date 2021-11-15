@@ -14,7 +14,9 @@ Article = []
 
 files = glob.glob("./content/Seminar/*")
 
-for file in sorted(files, reverse=True):
+for n in range(len(files), 0, -1):
+    file = f"./content/Seminar/{n}.md"
+
     dirname, basename = os.path.split(file)
     filename, ext = os.path.splitext(basename)
     with open(file) as f:
