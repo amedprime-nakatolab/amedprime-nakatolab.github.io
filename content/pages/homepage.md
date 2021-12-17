@@ -13,8 +13,5 @@ save_as: index.html
 参考：
 
 - [AMED「健康・医療の向上に向けた早期ライフステージにおける生命現象の解明」](https://www.amed.go.jp/program/list/16/02/001_13.html)
-
-![AMED-PRIME_Fig1.jpeg](../images/AMED-PRIME_Fig1.jpeg)
-
-<p style="text-align: center;">図1: データ駆動形エピゲノム解析システムの概要 <p>
+- [IHEC Japan](https://crest-ihec.jp/index.html)
 

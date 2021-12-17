@@ -4,7 +4,7 @@
 #-------------------#
 # Basic information #
 # サイトの基本情報 #
-AUTHOR = ''
+AUTHOR = 'Nakato Lab'
 SITENAME = ''
 SITEURL = 'https://amedprime-nakatolab.github.io/'
 TIMEZONE = 'Asia/Tokyo'
@@ -31,8 +31,8 @@ PLUGIN_PATHS = ['./pelican-plugins']
 #------------#
 # ページボタン #
 MENUITEMS = [('Home', '/'),
+            ('システムの概要', '/pages/system_summary.html'),
             ('マルチNGS研究会', '/pages/Seminar.html'),
-            # ('Test', '/pages/test.html'),
             ('Archives','/archives.html')]
 
 #------------#
@@ -56,7 +56,10 @@ NEST_HEADER_LOGO = ''
 
 # Footer
 NEST_SITEMAP_COLUMN_TITLE = u'Sitemap'
-NEST_SITEMAP_MENU = [('マルチNGS研究会', '/pages/Seminar.html'),('過去の講演','/pages/output.html'), ('セミナー案内の配信','/pages/ML.html')]
+NEST_SITEMAP_MENU = [('プロジェクト', '/pages/Project.html'),
+                     ('マルチNGS研究会', '/pages/Seminar.html'),
+                     ('過去の講演','/pages/output.html'), 
+                     ('セミナー案内の配信','/pages/ML.html')]
 NEST_SITEMAP_ATOM_LINK = u'Atom Feed'
 NEST_SITEMAP_RSS_LINK = u'RSS Feed'
 NEST_SOCIAL_COLUMN_TITLE = u'Social'
@@ -139,10 +142,11 @@ DEFAULT_PAGINATION = 5
 
 
 ## Blogroll ##
-# LINKS = (('Pelican', 'https://getpelican.com/'),
-#          ('Python.org', 'https://www.python.org/'),
-#          ('Jinja2', 'https://palletsprojects.com/p/jinja/'),
-#          ('You can modify those links in your config file', '#'),)
+LINKS = (('Nakato Lab', 'http://nakatolab.iqb.u-tokyo.ac.jp/'),
+        #  ('Python.org', 'https://www.python.org/'),
+        #  ('Jinja2', 'https://palletsprojects.com/p/jinja/'),
+        #  ('You can modify those links in your config file', '#'),
+)
 
 # Social widget
 # SOCIAL = (('You can add links in your config file', '#'),
