@@ -127,6 +127,7 @@ h1 {
     border:none;
 }
 
+
 h2 {
     font-size: 20px;
     line-height: 1.285714285714286em;
@@ -140,22 +141,28 @@ h2:after {
     margin-top: 10px;
     width: 40px;
     border-bottom: 3px solid #D93B4A;
-    /*border-bottom: 3px solid rgba(0,0,0,0.2);*/
 }
 
+
 h3 {
-    font-size: 16px;
     line-height: 1.285714285714286em;
     font-weight: 600;
     margin-top: 30px;
     margin-bottom: 30px;
+    position: relative;
+    padding: 0.5em;
+    background: #333333;
+    color: white;
 }
+
 h3:after {
-    display: block;
-    content: " ";
-    margin-top: 10px;
-    width: 40px;
-    border-bottom: 3px solid #D93B4A;
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0;
+    border: none;
+    border-bottom: solid 15px transparent;
+    border-right: solid 20px rgb(149, 158, 155);
 }
 
 h4 {
