@@ -127,6 +127,7 @@ h1 {
     border:none;
 }
 
+
 h2 {
     font-size: 20px;
     line-height: 1.285714285714286em;
@@ -140,8 +141,8 @@ h2:after {
     margin-top: 10px;
     width: 40px;
     border-bottom: 3px solid #D93B4A;
-    /*border-bottom: 3px solid rgba(0,0,0,0.2);*/
 }
+
 
 h3 {
     font-size: 16px;
@@ -154,7 +155,6 @@ h3:after {
     display: block;
     content: " ";
     margin-top: 10px;
-    width: 40px;
     border-bottom: 3px solid #D93B4A;
 }
 
