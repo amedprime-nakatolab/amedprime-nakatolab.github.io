@@ -56,7 +56,7 @@ NEST_HEADER_LOGO = ''
 
 # Footer
 NEST_SITEMAP_COLUMN_TITLE = u'Sitemap'
-NEST_SITEMAP_MENU = [('プロジェクト', '/pages/Project.html'),
+NEST_SITEMAP_MENU = [('システムの概要', '/pages/system_summary.html'),
                      ('マルチNGS研究会', '/pages/Seminar.html'),
                      ('過去の講演','/pages/output.html'), 
                      ('セミナー案内の配信','/pages/ML.html')]
