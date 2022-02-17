@@ -149,9 +149,10 @@ LINKS = (('Nakato Lab', 'http://nakatolab.iqb.u-tokyo.ac.jp/'),
 )
 
 # Social widget
-# SOCIAL = (('You can add links in your config file', '#'),
-#           ('Another social link', '#'),)
+SOCIAL = (('nakatolab twitter', 'https://twitter.com/nakatolab'),
+        #   ('Another social link', '#'),
+          )
 
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+# RELATIVE_URLS = True

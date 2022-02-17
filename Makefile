@@ -49,7 +49,7 @@ help:
 	@echo '                                                                          '
 
 html:
-	python make_list.py
+	python3 make_list.py
 	"$(PELICAN)" "$(INPUTDIR)" -o "$(OUTPUTDIR)" -s "$(CONFFILE)" $(PELICANOPTS)
 
 clean:
