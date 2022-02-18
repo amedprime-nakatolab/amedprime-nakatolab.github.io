@@ -149,7 +149,7 @@ LINKS = (('Nakato Lab', 'http://nakatolab.iqb.u-tokyo.ac.jp/'),
 )
 
 # Social widget
-SOCIAL = (('nakatolab twitter', 'https://twitter.com/nakatolab'),
+SOCIAL = (('twitter(@nakatolab)', 'https://twitter.com/nakatolab'),
         #   ('Another social link', '#'),
           )
 
