@@ -1,5 +1,5 @@
 Title: セミナー一覧
-Date: 2022-02-18
+Date: 2022-12-19
 Category: セミナー一覧
 Tags: セミナー一覧
 Template: page_before
