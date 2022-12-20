@@ -39,19 +39,12 @@ https://bootstrapious.com/p/bootstrap-sidebar
 
 ### 遺伝子発現
 
-RNA-seq及びそれに類似のNGSアッセイを用いて細胞内の遺伝子発現を網羅的に解析します。1細胞発現量解析（scRNA-seq）も可能です。
+RNA-seq及びそれに類似のNGSアッセイを用いて細胞内の遺伝子発現を網羅的に解析します。
 
 #### Tool
 
 * **RumBall**: RNA-seq analysis pipline [ [Readthedocs](https://rumball.readthedocs.io/en/latest/) | [Dockerhub](https://hub.docker.com/r/rnakato/rumball) | [Github](https://github.com/rnakato/RumBall) ]
-* **ShortCake**: a Docker image for single-cell analysis [ [Dockerhub](https://hub.docker.com/r/rnakato/shortcake) | [Github](https://github.com/rnakato/ShortCake) ] (a new version of [singlecell_jupyter](https://hub.docker.com/r/rnakato/singlecell_jupyter) [中戸, 実験医学, 2021年])
 
-
-#### 参考
-
-- Nakajima N, Hayashi T, Fujiki K, Shirahige K, Akiyama T, Akutsu T, Nakato R, 
-  [Codependency and mutual exclusivity for gene community detection from sparse single-cell transcriptome data](https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkab601/6324613)
-  *Nucleic Acids Research*, vol. 49, issue 18, e104, 2021.
 
 ### 三次元相互作用
 
@@ -70,13 +63,30 @@ Hi-C, Micro-C, Hi-ChIP, ChIA-PETなど、ゲノム立体構造を観察するた
   [Toward understanding the dynamic state of 3D genome](https://www.sciencedirect.com/science/article/pii/S2001037020303676)
   *Computational and Structural Biotechnology Journal*, vol. 18, 2259-2269, 2020.
 
+
+### シングルセル解析
+
+1細胞レベルでゲノム 情報（遺伝子発現量、オープンクロマチンなど）を定量する1細胞解析のためのプラットフォームを公開しています。
+
+#### Tool
+
+* **ShortCake**: a Docker image for single-cell analysis [ [Dockerhub](https://hub.docker.com/r/rnakato/shortcake) | [Github](https://github.com/rnakato/ShortCake) ] (a new version of [singlecell_jupyter](https://hub.docker.com/r/rnakato/singlecell_jupyter) [中戸, 実験医学, 2021年])
+
+#### 参考
+
+* Nakajima N, Hayashi T, Fujiki K, Shirahige K, Akiyama T, Akutsu T, Nakato R,
+  [Codependency and mutual exclusivity for gene community detection from sparse single-cell transcriptome data](https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkab601/6324613)
+  *Nucleic Acids Research*, vol. 49, issue 18, e104, 2021.
+* Dockerプラットフォームを用いたシングルセル解析支援, 羊土社「実験医学」増刊号 Vol.39 No.12, 2021年7月, P1993-1999.
+
+
 ### GWAS関連解析
 
 一連の解析で得られた興味のあるゲノム部位や遺伝子群に対し、既知の疾患関連ゲノム変異部位 (genome-wide association study, **GWAS**)との関連があるかを解析します。
 
 #### 参考
 
-- Nakato R, Wada Y, Nakaki R, Nagae G et al., 
+- Nakato R, Wada Y, Nakaki R, Nagae G et al.,
   [Comprehensive epigenome characterization reveals diverse transcriptional regulation across human vascular endothelial cells](https://epigeneticsandchromatin.biomedcentral.com/articles/10.1186/s13072-019-0319-0)
   *Epigenetics & Chromatin*, vol. 12, issue 1, 77, 2019.
 
