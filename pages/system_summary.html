@@ -73,40 +73,53 @@ https://bootstrapious.com/p/bootstrap-sidebar
 <p style="text-align: center;">図1: データ駆動形エピゲノム解析システムの概要 </p>
 <h3>エピゲノムアノテーション</h3>
 <p>ヒストン修飾のChIP-seq及びDNAメチル化データを用いて、ゲノム領域を種々の「クロマチン状態（プロモーター、エンハンサーなど）」に分類します。複数の細胞種間でのクロマチン状態の保存性・多様性を比較する他、IHECデータベースに登録されている多種細胞のエピゲノムデータをもとに機械学習を用いてエピゲノム状態・遺伝子発現状態を予測するようなアプローチも構築していく予定です。</p>
-<p>参考：</p>
+<h4>Tool</h4>
 <ul>
-<li>Nakato R, Sakata T, 
+<li><strong>Churros</strong>: ChIP-seq analysis pipline [ <a href="https://churros.readthedocs.io/en/latest/">Readthedocs</a> | <a href="https://hub.docker.com/r/rnakato/churros">Dockerhub</a> | <a href="https://github.com/rnakato/Churros">Github</a> ]</li>
+</ul>
+<h4>参考</h4>
+<ul>
+<li>Nakato R, Sakata T,
   <a href="https://www.sciencedirect.com/science/article/pii/S1046202320300591">Methods for ChIP-seq analysis: A practical workflow and advanced applications</a>
 <em>Methods</em>, vol. 187, 44-53, 2020.</li>
-<li>Nakato R, Shirahige K, 
+<li>Nakato R, Shirahige K,
   <a href="https://academic.oup.com/bib/article/18/2/279/2453282/Recent-advances-in-ChIP-seq-analysis-from-quality">Recent advances in ChIP-seq analysis: from quality management to whole-genome annotation</a>
 <em>Briefings in Bioinformatics</em>, vol. 18, issue 2, 279-290, 2017.</li>
 </ul>
 <h3>遺伝子発現</h3>
 <p>RNA-seq及びそれに類似のNGSアッセイを用いて細胞内の遺伝子発現を網羅的に解析します。1細胞発現量解析（scRNA-seq）も可能です。</p>
-<p>参考：</p>
+<h4>Tool</h4>
+<ul>
+<li><strong>RumBall</strong>: RNA-seq analysis pipline [ <a href="https://rumball.readthedocs.io/en/latest/">Readthedocs</a> | <a href="https://hub.docker.com/r/rnakato/rumball">Dockerhub</a> | <a href="https://github.com/rnakato/RumBall">Github</a> ]</li>
+<li><strong>ShortCake</strong>: a Docker image for single-cell analysis [ <a href="https://hub.docker.com/r/rnakato/shortcake">Dockerhub</a> | <a href="https://github.com/rnakato/ShortCake">Github</a> ] (a new version of <a href="https://hub.docker.com/r/rnakato/singlecell_jupyter">singlecell_jupyter</a> [中戸, 実験医学, 2021年])</li>
+</ul>
+<h4>参考</h4>
 <ul>
 <li>Nakajima N, Hayashi T, Fujiki K, Shirahige K, Akiyama T, Akutsu T, Nakato R, 
-<a href="https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkab601/6324613">Codependency and mutual exclusivity for gene community detection from sparse single-cell transcriptome data</a>
+  <a href="https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkab601/6324613">Codependency and mutual exclusivity for gene community detection from sparse single-cell transcriptome data</a>
 <em>Nucleic Acids Research</em>, vol. 49, issue 18, e104, 2021.</li>
 </ul>
 <h3>三次元相互作用</h3>
 <p>Hi-C, Micro-C, Hi-ChIP, ChIA-PETなど、ゲノム立体構造を観察するためのNGSアッセイは数多くあります。これらの手法を用いて、エンハンサープロモーター相互作用、TADと呼ばれる構造単位、コンパートメント構造などを解析可能です。アッセイごとに得意分野が異なりますので、目的に応じて手法を選択する必要があります。また、立体構造データをヒストン修飾ChIP-seqと統合してクロマチン状態推定に用いる手法も開発しました。</p>
-<p>参考：</p>
+<h4>Tool</h4>
 <ul>
-<li>Wang J, Nakato R, 
-<a href="https://academic.oup.com/bib/advance-article/doi/10.1093/bib/bbab509/6446983">HiC1Dmetrics: framework to extract various one-dimensional features from chromosome structure data</a>
+<li><strong>CustardPy</strong>: Hi-C analysis pipline [ <a href="https://custardpy.readthedocs.io/en/latest/">Readthedocs</a> | <a href="https://hub.docker.com/r/rnakato/custardpy">Dockerhub</a> | <a href="https://github.com/rnakato/CustardPy">Github</a> | <a href="https://doi.org/10.1101/2022.05.24.493188">bioRxiv</a> ]</li>
+</ul>
+<h4>参考</h4>
+<ul>
+<li>Wang J, Nakato R,
+  <a href="https://academic.oup.com/bib/advance-article/doi/10.1093/bib/bbab509/6446983">HiC1Dmetrics: framework to extract various one-dimensional features from chromosome structure data</a>
 <em>Briefings in Bioinformatics</em>, bbab509, 2021.</li>
-<li>Shinkai S, Onami S, Nakato R, 
-<a href="https://www.sciencedirect.com/science/article/pii/S2001037020303676">Toward understanding the dynamic state of 3D genome</a>
+<li>Shinkai S, Onami S, Nakato R,
+  <a href="https://www.sciencedirect.com/science/article/pii/S2001037020303676">Toward understanding the dynamic state of 3D genome</a>
 <em>Computational and Structural Biotechnology Journal</em>, vol. 18, 2259-2269, 2020.</li>
 </ul>
 <h3>GWAS関連解析</h3>
 <p>一連の解析で得られた興味のあるゲノム部位や遺伝子群に対し、既知の疾患関連ゲノム変異部位 (genome-wide association study, <strong>GWAS</strong>)との関連があるかを解析します。</p>
-<p>参考：</p>
+<h4>参考</h4>
 <ul>
 <li>Nakato R, Wada Y, Nakaki R, Nagae G et al., 
-<a href="https://epigeneticsandchromatin.biomedcentral.com/articles/10.1186/s13072-019-0319-0">Comprehensive epigenome characterization reveals diverse transcriptional regulation across human vascular endothelial cells</a>
+  <a href="https://epigeneticsandchromatin.biomedcentral.com/articles/10.1186/s13072-019-0319-0">Comprehensive epigenome characterization reveals diverse transcriptional regulation across human vascular endothelial cells</a>
 <em>Epigenetics &amp; Chromatin</em>, vol. 12, issue 1, 77, 2019.</li>
 </ul>
 <h3>その他</h3>
@@ -123,7 +136,6 @@ https://bootstrapious.com/p/bootstrap-sidebar
 <li><a href="https://amedprime-nakatolab.github.io/pages/system_summary.html">システムの概要</a></li>
 <li><a href="https://amedprime-nakatolab.github.io/pages/Seminar.html">マルチNGS研究会</a></li>
 <li><a href="https://amedprime-nakatolab.github.io/pages/output.html">過去の講演</a></li>
-<li><a href="https://amedprime-nakatolab.github.io/pages/ML.html">セミナー案内の配信</a></li>
 </ul>
 </div>
 <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
@@ -140,10 +152,10 @@ https://bootstrapious.com/p/bootstrap-sidebar
 </div>
 <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
 <p class="pull-right text-right">
-<small><em>Powered by <a href="http://docs.getpelican.com/" target="_blank">pelican</a></em></small><br/>
-<small><em>Theme by <a href="https://github.com/molivier/nest" target="_blank">nest</a></em></small><br/>
-<small>© 2021</small>
-</p>
+<small><em>Powered by <a href="http://docs.getpelican.com/" target="_blank">pelican</a></em></small><br>
+<small><em>Theme by <a href="https://github.com/molivier/nest" target="_blank">nest</a></em></small><br>
+<small>© 2022</small>
+</br></br></p>
 </div>
 </div>
 </div>
