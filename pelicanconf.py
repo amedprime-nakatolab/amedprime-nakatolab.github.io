@@ -59,12 +59,13 @@ NEST_SITEMAP_COLUMN_TITLE = u'Sitemap'
 NEST_SITEMAP_MENU = [('システムの概要', '/pages/system_summary.html'),
                      ('マルチNGS研究会', '/pages/Seminar.html'),
                      ('過去の講演','/pages/output.html'), 
-                     ('セミナー案内の配信','/pages/ML.html')]
+                    #  ('セミナー案内の配信','/pages/ML.html')
+                     ]
 NEST_SITEMAP_ATOM_LINK = u'Atom Feed'
 NEST_SITEMAP_RSS_LINK = u'RSS Feed'
 NEST_SOCIAL_COLUMN_TITLE = u'Social'
 NEST_LINKS_COLUMN_TITLE = u'Links'
-NEST_COPYRIGHT = u'&copy; 2021'
+NEST_COPYRIGHT = u'&copy; 2022'
 
 # Footer optional
 NEST_FOOTER_HTML = ''
