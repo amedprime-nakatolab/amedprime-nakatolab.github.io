@@ -87,17 +87,10 @@ https://bootstrapious.com/p/bootstrap-sidebar
 <em>Briefings in Bioinformatics</em>, vol. 18, issue 2, 279-290, 2017.</li>
 </ul>
 <h3>遺伝子発現</h3>
-<p>RNA-seq及びそれに類似のNGSアッセイを用いて細胞内の遺伝子発現を網羅的に解析します。1細胞発現量解析（scRNA-seq）も可能です。</p>
+<p>RNA-seq及びそれに類似のNGSアッセイを用いて細胞内の遺伝子発現を網羅的に解析します。</p>
 <h4>Tool</h4>
 <ul>
 <li><strong>RumBall</strong>: RNA-seq analysis pipline [ <a href="https://rumball.readthedocs.io/en/latest/">Readthedocs</a> | <a href="https://hub.docker.com/r/rnakato/rumball">Dockerhub</a> | <a href="https://github.com/rnakato/RumBall">Github</a> ]</li>
-<li><strong>ShortCake</strong>: a Docker image for single-cell analysis [ <a href="https://hub.docker.com/r/rnakato/shortcake">Dockerhub</a> | <a href="https://github.com/rnakato/ShortCake">Github</a> ] (a new version of <a href="https://hub.docker.com/r/rnakato/singlecell_jupyter">singlecell_jupyter</a> [中戸, 実験医学, 2021年])</li>
-</ul>
-<h4>参考</h4>
-<ul>
-<li>Nakajima N, Hayashi T, Fujiki K, Shirahige K, Akiyama T, Akutsu T, Nakato R, 
-  <a href="https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkab601/6324613">Codependency and mutual exclusivity for gene community detection from sparse single-cell transcriptome data</a>
-<em>Nucleic Acids Research</em>, vol. 49, issue 18, e104, 2021.</li>
 </ul>
 <h3>三次元相互作用</h3>
 <p>Hi-C, Micro-C, Hi-ChIP, ChIA-PETなど、ゲノム立体構造を観察するためのNGSアッセイは数多くあります。これらの手法を用いて、エンハンサープロモーター相互作用、TADと呼ばれる構造単位、コンパートメント構造などを解析可能です。アッセイごとに得意分野が異なりますので、目的に応じて手法を選択する必要があります。また、立体構造データをヒストン修飾ChIP-seqと統合してクロマチン状態推定に用いる手法も開発しました。</p>
@@ -114,11 +107,24 @@ https://bootstrapious.com/p/bootstrap-sidebar
   <a href="https://www.sciencedirect.com/science/article/pii/S2001037020303676">Toward understanding the dynamic state of 3D genome</a>
 <em>Computational and Structural Biotechnology Journal</em>, vol. 18, 2259-2269, 2020.</li>
 </ul>
+<h3>シングルセル解析</h3>
+<p>1細胞レベルでゲノム 情報（遺伝子発現量、オープンクロマチンなど）を定量する1細胞解析のためのプラットフォームを公開しています。</p>
+<h4>Tool</h4>
+<ul>
+<li><strong>ShortCake</strong>: a Docker image for single-cell analysis [ <a href="https://hub.docker.com/r/rnakato/shortcake">Dockerhub</a> | <a href="https://github.com/rnakato/ShortCake">Github</a> ] (a new version of <a href="https://hub.docker.com/r/rnakato/singlecell_jupyter">singlecell_jupyter</a> [中戸, 実験医学, 2021年])</li>
+</ul>
+<h4>参考</h4>
+<ul>
+<li>Nakajima N, Hayashi T, Fujiki K, Shirahige K, Akiyama T, Akutsu T, Nakato R,
+  <a href="https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkab601/6324613">Codependency and mutual exclusivity for gene community detection from sparse single-cell transcriptome data</a>
+<em>Nucleic Acids Research</em>, vol. 49, issue 18, e104, 2021.</li>
+<li>Dockerプラットフォームを用いたシングルセル解析支援, 羊土社「実験医学」増刊号 Vol.39 No.12, 2021年7月, P1993-1999.</li>
+</ul>
 <h3>GWAS関連解析</h3>
 <p>一連の解析で得られた興味のあるゲノム部位や遺伝子群に対し、既知の疾患関連ゲノム変異部位 (genome-wide association study, <strong>GWAS</strong>)との関連があるかを解析します。</p>
 <h4>参考</h4>
 <ul>
-<li>Nakato R, Wada Y, Nakaki R, Nagae G et al., 
+<li>Nakato R, Wada Y, Nakaki R, Nagae G et al.,
   <a href="https://epigeneticsandchromatin.biomedcentral.com/articles/10.1186/s13072-019-0319-0">Comprehensive epigenome characterization reveals diverse transcriptional regulation across human vascular endothelial cells</a>
 <em>Epigenetics &amp; Chromatin</em>, vol. 12, issue 1, 77, 2019.</li>
 </ul>
